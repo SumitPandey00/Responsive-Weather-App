@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+}
+.form{
+text-align: center;
+margin-top: 1%;
+margin-bottom: 10%;
+}
+input{
+  font-size: larger;
+  opacity: .8;
+  background:linear-gradient(110deg, rgba(238, 186, 44, 0.3) 60%, rgba(226, 142, 103, 0.2) 60%);
+  color: white;
+  border: 1px solid rgb(172, 54, 19);
+  border-radius: 8px;
+  opacity: 1;
+  padding: 1%;
+
+}
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  margin: 0;
+}
+.Container:before{
+  content: "";
+  background: url('./assets/johannes-plenio-qkfxBc2NQ18-unsplash.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+.main-img{
+  width:100%;
+  height: 25rem;
+  filter:brightness(60%);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.top3{
+  display: flex;
+  justify-content: space-evenly;
+}
+.Temprature{
+  display: flex ;
+  font-size:3rem;
+
+}
+.Location{
+  font-size:2rem;
+  transform: rotate(90deg);
+}
+.Weather{
+  display: flex ;
+  font-size:1rem;
+}
+.center-stats{
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;
+}
+.stats{
+  display: flex;
+  flex-direction: row;
+  width:fit-content;
+  border-radius: 10px;
+  font-size:fit-content;
+  padding:fit-content;
+  background-color: rgba(252, 250, 250, 0.2);
+  padding: 1vh;
+
+  
+}
+.feelslike{
+  margin-right: 2rem;
+}
+.Wind{
+  margin-left: 2rem;
+}
